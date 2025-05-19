@@ -1,0 +1,336 @@
+/* Estilos del Head */
+/* Colores y ajustes pricipales */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFC9C9; 
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+/* Estilo del selector de apartados */
+.caja {
+    display: flex;
+    align-items: center;
+}
+
+.caja h1 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.caja img {
+    height: 50px;
+    width: auto;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin: 0 .0px; 
+    padding: 0;
+    flex-grow: 1;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 20px 30px;
+    transition: background-color 0.3s;
+    display: block;
+    background-color: white; 
+    white-space: nowrap;
+    border-radius: 0px; 
+    margin: 0; 
+    
+}
+
+nav ul li a {
+    word-wrap: break-word; 
+    word-break: break-word; 
+}
+
+
+nav ul li:first-child a {
+    border-radius: 0; 
+  
+}
+
+
+nav ul li:first-child a {
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+
+}
+
+
+nav ul li:last-child a {
+    border-top-right-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+}
+
+
+nav ul li a:hover {
+    background-color: #977C55; 
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.index nav ul li:first-child a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+
+body.menu nav ul li:nth-child(2) a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+
+
+
+body.rules nav ul li:nth-child(4) a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+
+body.dishes nav ul li:nth-child(5) a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+
+body.gastronomy nav ul li:nth-child(6) a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+
+body.biography nav ul li:nth-child(7) a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFC9C9;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+}
+
+.caja img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #887162;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+    display: block;
+    background-color: white; 
+    
+}
+nav ul li a:hover {
+    background-color: #977C55;
+}
+
+
+body.history {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.history nav ul li:nth-child(3) a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+
+body.world nav ul li:nth-child(5) a {
+    background-color: #977C55; 
+    color:#ffffff; 
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFC9C9;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+}
+
+.caja img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #887162;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+    display: block;
+    background-color: white; 
+    
+}
+nav ul li a:hover {
+    background-color: #977C55;
+}
+
+
+
+/* Estilo para la primera sección (imagen a la izquierda y texto al lado) */
+.seccion1 {
+    display: flex;
+    padding: 20px;
+    background-color: #9ABA66;
+    min-height: 200px;
+}
+
+.seccion1 img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.seccion1 .texto {
+    max-width: 600px;
+}
+
+/* Estilo para la segunda sección (texto en color negro con fondo blanco) */
+.seccion2 {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: justify;
+    min-height: 150px;
+}
+
+/* Estilo para la tercera sección (texto blanco con fondo rosado) */
+.seccion3 {
+    background-color: #FFC9C9; /* color rosado */
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    min-height: 150px;
+}
+
+/* Estilo para la cuarta sección (texto negro con fondo café) */
+.seccion4 {
+    background-color: #977C55; /* color café */
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    min-height: 150px;
+}
+
+
+/* Estilos del footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #9ABA66; 
+    color: white;
+    margin-top: auto;
+}
+
+/* Estilos para la parte izquierda (iconos) */
+.footer-left {
+    display: flex;
+    gap: 15px; 
+}
+
+.footer-left a {
+    text-decoration: none;
+}
+
+.footer-left img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.footer-left img:hover {
+    transform: scale(1.2); 
+}
+
+/* Estilos para la parte izquierda (Bibliografia) */
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+/* Estilos para la parte izquierda (Copyright) */
+
+.footer-right {
+    font-size: 18px;
+    text-align: right;
+}
+
+
+#year {
+    font-weight: bold;
+}
+
+

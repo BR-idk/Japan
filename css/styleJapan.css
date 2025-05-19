@@ -1,0 +1,439 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFC9C9;
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor del logo y título */
+.caja {
+    display: flex;
+    align-items: center;
+}
+
+.caja img {
+    height: 50px;
+    width: auto;
+}
+
+.caja h1 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 10px;
+} 
+nav ul {
+    
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    flex-grow: 0; 
+}
+
+nav ul li a {
+    word-wrap: break-word; 
+    hyphens: auto; 
+    text-decoration: none;
+    color: #887162;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+    display: block;
+    background-color: white;
+    white-space: nowrap;
+    border-radius: 0;
+}
+
+nav ul li a:hover {
+    background-color: #977C55;
+    color: white;
+}
+
+nav ul li:first-child a {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+nav ul li:last-child a {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Colores activos por sección */
+body.index nav ul li:first-child a,
+body.menu nav ul li:nth-child(2) a,
+body.history nav ul li:nth-child(3) a,
+body.rules nav ul li:nth-child(4) a,
+body.dishes nav ul li:nth-child(5) a,
+body.world nav ul li:nth-child(6) a,
+body.biography nav ul li:nth-child(7) a,
+body.main nav ul li:nth-child(6) a {
+    background-color: #977C55;
+    color: #ffffff;
+}
+
+/* Imagen de inicio */
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: black;
+    background-color: #FFC9C9;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 15px;
+}
+
+.right-arrow {
+    right: 15px;
+}
+
+/* Bienvenida */
+.content {
+    padding: 40px 10%;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #887162;
+}
+
+.titleRules {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #887162;
+}
+
+.paragraphs {
+    margin-top: 20px;
+}
+
+.paragraphs p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #887162;
+    padding: 0 20px;
+}
+
+/* Secciones */
+.seccion {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+    color: white;
+}
+
+.seccion img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.seccion2 img.imagenPrincipal {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.seccion h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.seccion p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* Colores secciones */
+.seccion1 {
+    display: flex;
+    padding: 20px;
+    background-color: #9ABA66;
+    min-height: 200px;
+
+}
+
+.seccion1 img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.seccion1 .texto {
+    max-width: 600px;
+}
+
+/* Estilo para la segunda sección (texto en color negro con fondo blanco) */
+.seccion2 {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: justify;
+    min-height: 150px;
+}
+
+/* Estilo para la tercera sección (texto blanco con fondo rosado) */
+.seccion3 {
+    background-color: #FFC9C9; /* color rosado */
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    min-height: 150px;
+}
+
+/* Estilo para la cuarta sección (texto negro con fondo café) */
+.seccion4 {
+    background-color: #977C55; /* color café */
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    min-height: 150px;
+}
+
+/* Colores secciones */
+.seccion8 {
+    background-color: #9ABA66; /* color café */
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    min-height: 150px;
+
+}
+
+
+.seccion5 {
+    background-color: #ffffff;
+}
+
+.seccion5 h2,
+.seccion5 p {
+    color: #977C55;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #9ABA66;
+    color: white;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-left a {
+    text-decoration: none;
+}
+
+.footer-left img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.footer-left img:hover {
+    transform: scale(1.2);
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer-right {
+    font-size: 16px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#fechaHora,
+#year {
+    font-weight: bold;
+}
+
+/* Responsive */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        color: #000;
+    }
+
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    #navbar.active ul {
+        display: flex;
+    }
+
+    #navbar ul li {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+@media (max-width: 480px) {
+    .caja {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .caja img {
+        height: 40px;
+    }
+
+    nav ul li a {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    nav ul li:first-child a,
+    nav ul li:last-child a {
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 480px) {
+    .caja {
+        flex-direction: row;
+    }
+
+    .caja img {
+        height: 40px;
+    }
+
+    nav ul li a {
+        padding: 15px 20px;
+    }
+
+    nav ul li:first-child a,
+    nav ul li:last-child a {
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .caja div {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav ul li a {
+        font-size: 18px; 
+        white-space: nowrap; 
+    }
+    nav ul li:first-child a {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+
+    nav ul li:last-child a {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+
+/* Cuerpo extendido en páginas específicas */
+body.biography,
+body.history {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
